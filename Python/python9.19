@@ -1,0 +1,92 @@
+thought /variable /convert
+
+for i in range(1,101):
+	if i%2==1 :
+		print(i)
+
+
+#陣列
+a=[1,4,6,4,45]
+print(a[0])
+print(a[2:])
+print(a[:2])
+
+#陣列總和
+a=[1,4,6,5,75]
+
+x=0.0
+
+for i in a:
+	
+	x+=i
+	
+print (x)
+
+
+a=[1,4,6,5,75]
+
+x=0.0
+
+#指印奇數
+#if i%2 !=0:
+	
+for i in a:
+	
+	x+=i
+	
+print (x)
+
+b=10*[1]
+print(b)
+
+c=a*2
+print(c)
+
+
+
+
+import math
+
+a=[1,4,6,5,75]
+
+x=0.0
+
+#指印奇數
+#if i%2 !=0:
+	
+for i in a:
+	x+=i	
+
+print (x)
+m=x/len(a)
+
+#算均方平方和
+sss=0.0
+for i in a:
+	sss+=math.pow(i-m,2)	
+print(sss)
+
+
+#python 的陣列無法做運算，改成numpy的陣列，可以直接對陣列做統計運算
+b=numpy.array([1,4,6,5,75])
+print(b.sum())
+print(b.var())
+
+
+#待解問題(做資料排序)
+a=[1,4,6,5,75]
+
+b=0.00
+temp=0.00
+temp.l=0
+
+#最大值
+for i in range(0,len(a)):
+	if a[i]>b:
+	temp=a[i]:
+	temp.l=i
+
+print(temp,temp.l)
+
+#今天作業
+計算hello kitty 每個字母分別有幾個字
